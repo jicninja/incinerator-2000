@@ -5,6 +5,7 @@
 
 Incinerator 2000 is a mock API server designed to simulate various error responses for testing and development purposes. This server can be used to help developers understand how their applications handle different types of errors, including hard crashes, logging all events.
 
+Do you want to fire your app? Try https://incinerator-2000.onrender.com
   
 
 ## Table of Contents
