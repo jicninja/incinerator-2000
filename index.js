@@ -6,7 +6,7 @@ const { sendRandomResponse } = require('./modules/responses');
 const { generateDelayOrTimeout } = require('./modules/timeout');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const makeEvilPipes = () => {
   let finalLog = {};
@@ -82,5 +82,5 @@ app.delete(...makeEvilPipes());
 app.options(...makeEvilPipes());
 
 app.listen(PORT, () => {
-  console.log(`Make a big disaster at http://localhost:${PORT}`);
+  console.log(`Make a big disaster at *:${PORT}`);
 });
